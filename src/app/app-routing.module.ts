@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 //LazyLoading
-{path:"",loadChildren:()=>import("./modules/auth/auth.module").then(m => m.AuthModule)},
-{path:"",loadChildren:()=>import("./modules/home/home.module").then(m => m.HomeModule)}
+{path:"Auth",loadChildren:()=>import("./modules/auth/auth.module").then(m => m.AuthModule)},
+{path:"Home",loadChildren:()=>import("./modules/home/home.module").then(m => m.HomeModule)}
 
 ];
 
